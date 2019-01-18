@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D363BBB521F1FAC900FAA7ED /* EasySideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */; };
+		D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */; };
+		D363BBBC21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */; };
 		D3918B4521E6150F0005816B /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3918B3B21E6150F0005816B /* EasySideMenuController.framework */; };
 		D3918B4A21E6150F0005816B /* EasySideMenuControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B4921E6150F0005816B /* EasySideMenuControllerTests.swift */; };
 		D3918B4C21E6150F0005816B /* EasySideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3918B3E21E6150F0005816B /* EasySideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuController.swift; sourceTree = "<group>"; };
+		D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
+		D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuControllerDelegate.swift; sourceTree = "<group>"; };
 		D3918B3B21E6150F0005816B /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3918B3E21E6150F0005816B /* EasySideMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasySideMenuController.h; sourceTree = "<group>"; };
 		D3918B3F21E6150F0005816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +102,9 @@
 			children = (
 				D3918B3E21E6150F0005816B /* EasySideMenuController.h */,
 				D3918B3F21E6150F0005816B /* Info.plist */,
+				D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */,
+				D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */,
+				D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */,
 			);
 			path = EasySideMenuController;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 				TargetAttributes = {
 					D3918B3A21E6150F0005816B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					D3918B4321E6150F0005816B = {
 						CreatedOnToolsVersion = 10.1;
@@ -257,6 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D363BBB521F1FAC900FAA7ED /* EasySideMenuController.swift in Sources */,
+				D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */,
+				D363BBBC21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +417,7 @@
 		D3918B5021E6150F0005816B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -421,6 +435,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Fumiya-Tanaka.EasySideMenuController";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -429,6 +444,7 @@
 		D3918B5121E6150F0005816B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -454,6 +470,7 @@
 		D3918B5321E6150F0005816B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = EasySideMenuControllerTests/Info.plist;
@@ -472,6 +489,7 @@
 		D3918B5421E6150F0005816B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = EasySideMenuControllerTests/Info.plist;
