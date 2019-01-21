@@ -9,18 +9,15 @@
 import UIKit
 import EasySideMenuController
 
-class ViewController: UIViewController {
-
+class ViewController: EasySideMenuController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func tappedShowSideMenuButton() {
-        let sideMenuConntroller = EasySideMenuController()
+    @IBAction func tappedShowSideMenuButton() {        
+        let modalVC = DemoModalViewController()
+        SideMenuManager.shared.showSideMenu(direction: .left, presenting: self, presented: modalVC)
     }
-
-    
-    
 }
-

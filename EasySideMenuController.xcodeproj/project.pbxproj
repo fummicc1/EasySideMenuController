@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D363BBB521F1FAC900FAA7ED /* EasySideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */; };
+		D317622221F54ACA00E3B41F /* EasyPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D317622121F54ACA00E3B41F /* EasyPresentationController.swift */; };
+		D346A2AA21F4C97A00749CCF /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346A2A921F4C97A00749CCF /* SideMenuModel.swift */; };
 		D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */; };
-		D363BBBC21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */; };
+		D363BBBC21F203DB00FAA7ED /* EasySideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */; };
 		D3918B4521E6150F0005816B /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3918B3B21E6150F0005816B /* EasySideMenuController.framework */; };
 		D3918B4A21E6150F0005816B /* EasySideMenuControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B4921E6150F0005816B /* EasySideMenuControllerTests.swift */; };
 		D3918B4C21E6150F0005816B /* EasySideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3918B3E21E6150F0005816B /* EasySideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,9 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuController.swift; sourceTree = "<group>"; };
+		D317622121F54ACA00E3B41F /* EasyPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyPresentationController.swift; sourceTree = "<group>"; };
+		D346A2A921F4C97A00749CCF /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
-		D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuControllerDelegate.swift; sourceTree = "<group>"; };
+		D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuController.swift; sourceTree = "<group>"; };
 		D3918B3B21E6150F0005816B /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3918B3E21E6150F0005816B /* EasySideMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasySideMenuController.h; sourceTree = "<group>"; };
 		D3918B3F21E6150F0005816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,9 +104,10 @@
 			children = (
 				D3918B3E21E6150F0005816B /* EasySideMenuController.h */,
 				D3918B3F21E6150F0005816B /* Info.plist */,
-				D363BBB421F1FAC900FAA7ED /* EasySideMenuController.swift */,
+				D317622121F54ACA00E3B41F /* EasyPresentationController.swift */,
+				D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */,
 				D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */,
-				D363BBBB21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift */,
+				D346A2A921F4C97A00749CCF /* SideMenuModel.swift */,
 			);
 			path = EasySideMenuController;
 			sourceTree = "<group>";
@@ -267,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D363BBB521F1FAC900FAA7ED /* EasySideMenuController.swift in Sources */,
+				D346A2AA21F4C97A00749CCF /* SideMenuModel.swift in Sources */,
 				D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */,
-				D363BBBC21F203DB00FAA7ED /* EasySideMenuControllerDelegate.swift in Sources */,
+				D317622221F54ACA00E3B41F /* EasyPresentationController.swift in Sources */,
+				D363BBBC21F203DB00FAA7ED /* EasySideMenuController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

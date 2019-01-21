@@ -9,23 +9,21 @@
 import Foundation
 
 protocol ShowSideMenuAPI {
-    func showSideMenu(direction: EasySideMenuController.Direction, presented: UIViewController)
+    var menuModel: SideMenuModel? { get }
+    func showSideMenu(direction: SideMenuModel.Direction,presenting: EasySideMenuController, presented: UIViewController)
 }
 
 public class SideMenuManager: ShowSideMenuAPI {
     
-    static let shared = SideMenuManager()
+    public static let shared = SideMenuManager()
     private init() { }
     
-//    private let sideMenuViewController = EasySideMenuController
+    var menuModel: SideMenuModel?
     
-    func showSideMenu(direction: EasySideMenuController.Direction, presented: UIViewController) {
-        switch direction {
-        case .left:
-            break
-        default:
-            break
-        }
+    public func showSideMenu(direction: SideMenuModel.Direction,presenting: EasySideMenuController, presented: UIViewController) {
+        menuModel = SideMenuModel(direction: direction)
+        presented.modalPresentationStyle = .custom
+        presented.transitioningDelegate = presenting
+        presenting.present(presented, animated: true, completion: nil)
     }
-    
 }

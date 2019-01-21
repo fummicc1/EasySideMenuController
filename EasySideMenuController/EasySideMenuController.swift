@@ -1,5 +1,5 @@
 //
-//  EasySideMenuController.swift
+//  EasySideMenuPresentationController.swift
 //  EasySideMenuController
 //
 //  Created by Fumiya Tanaka on 2019/01/18.
@@ -8,11 +8,8 @@
 
 import Foundation
 
-public class EasySideMenuController: UIPresentationController {
-    
-    public enum Direction {
-        case left
-        case right
-        case down
-    }
+open class EasySideMenuController: UIViewController, UIViewControllerTransitioningDelegate {
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return EasyPresentationController(presented: presented, presenting: presenting , direction: SideMenuManager.shared.menuModel?.direction ?? .left)
+    }    
 }

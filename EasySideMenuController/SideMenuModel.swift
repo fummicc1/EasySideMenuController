@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+public struct SideMenuModel {
+    
+    var direction: Direction
+    
+    public enum Direction {
+        case left
+        case right
+        case top
+        case bottom
+    }
+    
+}

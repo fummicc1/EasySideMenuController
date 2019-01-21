@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30C3D7421F5B59E0099B4F1 /* DemoModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30C3D7321F5B59E0099B4F1 /* DemoModalViewController.swift */; };
 		D3918B6221E615260005816B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B6121E615260005816B /* AppDelegate.swift */; };
 		D3918B6421E615260005816B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B6321E615260005816B /* ViewController.swift */; };
 		D3918B6721E615260005816B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3918B6521E615260005816B /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D30C3D7321F5B59E0099B4F1 /* DemoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModalViewController.swift; sourceTree = "<group>"; };
 		D3918B5E21E615260005816B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3918B6121E615260005816B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3918B6321E615260005816B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			children = (
 				D3918B6121E615260005816B /* AppDelegate.swift */,
 				D3918B6321E615260005816B /* ViewController.swift */,
+				D30C3D7321F5B59E0099B4F1 /* DemoModalViewController.swift */,
 				D3918B6521E615260005816B /* Main.storyboard */,
 				D3918B6821E615270005816B /* Assets.xcassets */,
 				D3918B6A21E615270005816B /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 			files = (
 				D3918B6421E615260005816B /* ViewController.swift in Sources */,
 				D3918B6221E615260005816B /* AppDelegate.swift in Sources */,
+				D30C3D7421F5B59E0099B4F1 /* DemoModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
