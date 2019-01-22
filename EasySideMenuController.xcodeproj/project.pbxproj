@@ -11,6 +11,7 @@
 		D346A2AA21F4C97A00749CCF /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D346A2A921F4C97A00749CCF /* SideMenuModel.swift */; };
 		D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */; };
 		D363BBBC21F203DB00FAA7ED /* EasySideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */; };
+		D36EB9EA21F70863003BA642 /* EasySideMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36EB9E921F70863003BA642 /* EasySideMenuAnimator.swift */; };
 		D3918B4521E6150F0005816B /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3918B3B21E6150F0005816B /* EasySideMenuController.framework */; };
 		D3918B4A21E6150F0005816B /* EasySideMenuControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B4921E6150F0005816B /* EasySideMenuControllerTests.swift */; };
 		D3918B4C21E6150F0005816B /* EasySideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3918B3E21E6150F0005816B /* EasySideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,6 +53,7 @@
 		D346A2A921F4C97A00749CCF /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuManager.swift; sourceTree = "<group>"; };
 		D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuController.swift; sourceTree = "<group>"; };
+		D36EB9E921F70863003BA642 /* EasySideMenuAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuAnimator.swift; sourceTree = "<group>"; };
 		D3918B3B21E6150F0005816B /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3918B3E21E6150F0005816B /* EasySideMenuController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasySideMenuController.h; sourceTree = "<group>"; };
 		D3918B3F21E6150F0005816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				D363BBBB21F203DB00FAA7ED /* EasySideMenuController.swift */,
 				D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */,
 				D346A2A921F4C97A00749CCF /* SideMenuModel.swift */,
+				D36EB9E921F70863003BA642 /* EasySideMenuAnimator.swift */,
 			);
 			path = EasySideMenuController;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			files = (
 				D346A2AA21F4C97A00749CCF /* SideMenuModel.swift in Sources */,
 				D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */,
+				D36EB9EA21F70863003BA642 /* EasySideMenuAnimator.swift in Sources */,
 				D317622221F54ACA00E3B41F /* EasyPresentationController.swift in Sources */,
 				D363BBBC21F203DB00FAA7ED /* EasySideMenuController.swift in Sources */,
 			);
