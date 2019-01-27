@@ -13,6 +13,7 @@ class DemoModalViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .blue
+        view.frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 300))
     }
     
 

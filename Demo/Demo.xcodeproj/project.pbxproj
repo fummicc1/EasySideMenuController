@@ -48,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D3087DD921FDA090008008CE /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D30C3D7321F5B59E0099B4F1 /* DemoModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoModalViewController.swift; sourceTree = "<group>"; };
 		D3918B5E21E615260005816B /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3918B6121E615260005816B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3087DD821FDA090008008CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3087DD921FDA090008008CE /* EasySideMenuController.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3918B5521E615260005816B = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +105,7 @@
 				D3918B7521E615270005816B /* DemoTests */,
 				D3918B8021E615270005816B /* DemoUITests */,
 				D3918B5F21E615260005816B /* Products */,
+				D3087DD821FDA090008008CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

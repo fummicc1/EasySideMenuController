@@ -18,6 +18,6 @@ class ViewController: EasySideMenuController {
 
     @IBAction func tappedShowSideMenuButton() {        
         let modalVC = DemoModalViewController()
-        SideMenuManager.shared.showSideMenu(direction: .left, presenting: self, presented: modalVC)
+        SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC)
     }
 }
