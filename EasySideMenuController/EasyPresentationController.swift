@@ -21,6 +21,10 @@ class EasyPresentationController: UIPresentationController {
         super.presentationTransitionWillBegin()
     }
     
+    override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
+        return SideMenuManager.shared.menuModel!.size
+    }
+    
 //
 //    private func startTransition() {
 //        presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] (context) in

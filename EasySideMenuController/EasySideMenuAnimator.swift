@@ -10,10 +10,15 @@ import Foundation
 
 class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     
+    var size: CGSize {
+        return SideMenuManager.shared.menuModel!.size
+    }
+    
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.2
     }
     
+    private var presented: UIViewController?
     
     private var direction: SideMenuModel.Direction
     
@@ -27,22 +32,23 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // 遷移先ViewController
         let to = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
         
+        self.presented = to
+        
         let containerView = transitionContext.containerView // 全体の元となるView
         
         containerView.insertSubview(to.view, belowSubview: from.view)
         
-        let originToVCFrame = to.view.frame
+        containerView.isUserInteractionEnabled = true
         
+        containerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissScreen)))
         
-        
-        print(originToVCFrame)
         
         // set animation start position
         if direction == .left {
             
             to.view.frame = .zero
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                to.view.frame = CGRect(x: 0, y: 0, width: originToVCFrame.width, height: originToVCFrame.height)
+                to.view.frame = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
             }) { (completed) in
                 // トランジションが完了したことを通知 (遷移が中断された状態かを通知)
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
@@ -50,9 +56,9 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             
         } else if direction == .right {
             
-            to.view.frame = CGRect(x: from.view.frame.maxX, y: 0, width: 0, height: originToVCFrame.height)
+            to.view.frame = CGRect(x: from.view.frame.maxX, y: 0, width: 0, height: size.height)
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                to.view.frame = CGRect(x: from.view.frame.maxX - originToVCFrame.width, y: 0, width: originToVCFrame.width, height: originToVCFrame.height)
+                to.view.frame = CGRect(x: from.view.frame.maxX - self.size.width, y: 0, width: self.size.width, height: self.size.height)
             }) { (completed) in
                 // トランジションが完了したことを通知 (遷移が中断された状態かを通知)
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
@@ -60,9 +66,9 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             
         } else if direction == .top {
             
-            to.view.frame = CGRect(x: 0, y: 0, width: originToVCFrame.width, height: 0)
+            to.view.frame = CGRect(x: 0, y: 0, width: size.width, height: 0)
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                to.view.frame = CGRect(x: 0, y: 0, width: originToVCFrame.width, height: originToVCFrame.height)
+                to.view.frame = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
             }) { (completed) in
                 // トランジションが完了したことを通知 (遷移が中断された状態かを通知)
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
@@ -70,9 +76,9 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
             
         } else if direction == .bottom {
             
-            to.view.frame = CGRect(x: 0, y: from.view.frame.maxY, width: originToVCFrame.width, height: 0)
+            to.view.frame = CGRect(x: 0, y: from.view.frame.maxY, width: size.width, height: 0)
             UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: {
-                to.view.frame = CGRect(x: 0, y: from.view.frame.maxY - originToVCFrame.height, width: originToVCFrame.width, height: originToVCFrame.height)
+                to.view.frame = CGRect(x: 0, y: from.view.frame.maxY - self.size.height, width: self.size.width, height: self.size.height)
             }) { (completed) in
                 // トランジションが完了したことを通知 (遷移が中断された状態かを通知)
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
@@ -83,4 +89,14 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // do animation
         
     }
+}
+
+extension EasySideMenuAnimator {
+    
+    @objc private func dismissScreen() {
+        if let _presented = presented {
+            _presented.dismiss(animated: true, completion: nil)
+        }
+    }
+    
 }

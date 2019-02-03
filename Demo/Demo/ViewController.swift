@@ -16,8 +16,20 @@ class ViewController: EasySideMenuController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func tappedShowSideMenuButton() {        
-        let modalVC = DemoModalViewController()
-        SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC)
+    @IBAction func didTapLeftSideMenuButton() {        
+        
+        let modalVC = UIStoryboard(name: "Left", bundle: nil).instantiateInitialViewController() as! LeftModalViewController
+        
+        SideMenuManager.shared.showSideMenu(direction: .left, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height))
     }
+    
+    @IBAction func didTapRightSideMenuButton() {
+        
+        let modalVC = UIStoryboard(name: "Right", bundle: nil).instantiateInitialViewController() as! RightModalViewController
+        
+        SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height))
+        
+    }
+    
+    
 }

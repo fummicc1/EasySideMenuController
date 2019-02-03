@@ -19,4 +19,6 @@ public struct SideMenuModel {
         case bottom
     }
     
+    var size: CGSize
+    
 }

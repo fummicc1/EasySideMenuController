@@ -1,19 +1,19 @@
 //
-//  DemoModalViewController.swift
+//  BottomModalViewController.swift
 //  Demo
 //
-//  Created by Fumiya Tanaka on 2019/01/21.
+//  Created by Fumiya Tanaka on 2019/02/03.
 //  Copyright © 2019 Fumiya Tanaka. All rights reserved.
 //
 
 import UIKit
 
-class DemoModalViewController: UIViewController {
+class BottomModalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .blue
-        view.frame = CGRect(origin: .zero, size: CGSize(width: 300, height: 300))
+
+        // Do any additional setup after loading the view.
     }
     
 
