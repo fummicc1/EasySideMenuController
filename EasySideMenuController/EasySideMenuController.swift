@@ -9,12 +9,13 @@
 import Foundation
 
 open class EasySideMenuController: UIViewController, UIViewControllerTransitioningDelegate {
+    
     public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return EasyPresentationController(presented: presented, presenting: presenting)
     }
     
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return EasySideMenuAnimator(direction: SideMenuManager.shared.menuModel!.direction)
+        return nil
     }
 
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {

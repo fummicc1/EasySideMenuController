@@ -27,9 +27,6 @@ class ViewController: EasySideMenuController {
         
         let modalVC = UIStoryboard(name: "Right", bundle: nil).instantiateInitialViewController() as! RightModalViewController
         
-        SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height))
-        
+        SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height))        
     }
-    
-    
 }

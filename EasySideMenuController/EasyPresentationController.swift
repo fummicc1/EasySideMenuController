@@ -19,6 +19,14 @@ class EasyPresentationController: UIPresentationController {
     // 表示トランザクション前に呼ばれる
     override func presentationTransitionWillBegin() {
         super.presentationTransitionWillBegin()
+        
+        overView = UIView()
+        overView.frame = containerView?.frame ?? .zero
+        overView.isUserInteractionEnabled = true
+        overView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissPresentedVC)))
+        
+        containerView?.addSubview(overView)
+        
     }
     
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
@@ -38,4 +46,10 @@ class EasyPresentationController: UIPresentationController {
 //        }, completion: nil)
 //    }
 //
+}
+
+extension EasyPresentationController {
+    @objc private func dismissPresentedVC() {
+        presentedViewController.dismiss(animated: true, completion: nil)
+    }
 }

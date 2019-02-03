@@ -27,8 +27,10 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        
         // 遷移元ViewController
-        let from = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!
+        let from = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from) as! EasySideMenuController
+        
         // 遷移先ViewController
         let to = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.to)!
         
@@ -37,10 +39,6 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         let containerView = transitionContext.containerView // 全体の元となるView
         
         containerView.insertSubview(to.view, belowSubview: from.view)
-        
-        containerView.isUserInteractionEnabled = true
-        
-        containerView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissScreen)))
         
         
         // set animation start position
@@ -89,14 +87,4 @@ class EasySideMenuAnimator: NSObject, UIViewControllerAnimatedTransitioning {
         // do animation
         
     }
-}
-
-extension EasySideMenuAnimator {
-    
-    @objc private func dismissScreen() {
-        if let _presented = presented {
-            _presented.dismiss(animated: true, completion: nil)
-        }
-    }
-    
 }
