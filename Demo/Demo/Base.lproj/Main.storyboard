@@ -47,12 +47,18 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="↑"/>
+                                <connections>
+                                    <action selector="didTapTopSideMenuButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAv-ku-ZwD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEK-i4-EQP">
                                 <rect key="frame" x="94" y="383.5" width="187.5" height="100"/>
                                 <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <state key="normal" title="↓"/>
+                                <connections>
+                                    <action selector="didTapBottomSideMenuButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="uPQ-PM-gT2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>

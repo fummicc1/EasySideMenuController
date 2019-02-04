@@ -16,7 +16,7 @@ class ViewController: EasySideMenuController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func didTapLeftSideMenuButton() {        
+    @IBAction func didTapLeftSideMenuButton() {
         
         let modalVC = UIStoryboard(name: "Left", bundle: nil).instantiateInitialViewController() as! LeftModalViewController
         
@@ -29,4 +29,21 @@ class ViewController: EasySideMenuController {
         
         SideMenuManager.shared.showSideMenu(direction: .right, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height))        
     }
+    
+    @IBAction func didTapTopSideMenuButton() {
+        
+        let modalVC = UIStoryboard(name: "Top", bundle: nil).instantiateInitialViewController() as! TopModalViewController
+        
+        SideMenuManager.shared.showSideMenu(direction: .top, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: 200))
+        
+    }
+    
+    @IBAction func didTapBottomSideMenuButton() {
+        
+        let modalVC = UIStoryboard(name: "Top", bundle: nil).instantiateInitialViewController() as! TopModalViewController
+        
+        SideMenuManager.shared.showSideMenu(direction: .bottom, presenting: self, presented: modalVC, sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: 200))
+    }
+    
+    
 }

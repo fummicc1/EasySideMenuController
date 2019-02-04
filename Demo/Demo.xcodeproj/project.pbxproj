@@ -141,15 +141,11 @@
 			isa = PBXGroup;
 			children = (
 				D3918B6D21E615270005816B /* Info.plist */,
-				D3F0B1E42206FA1600EF93DB /* Bottom.storyboard */,
-				D3F0B1E02206FA0600EF93DB /* Left.storyboard */,
-				D3F0B1E22206FA0D00EF93DB /* Right.storyboard */,
-				D3F0B1E62206FA1E00EF93DB /* Top.storyboard */,
+				D3ADC54222087F25009814F0 /* Bottom */,
+				D3ADC54122087F1A009814F0 /* Left */,
+				D3ADC54322087F2F009814F0 /* Right */,
+				D3ADC54022087F11009814F0 /* Top */,
 				D3918B6121E615260005816B /* AppDelegate.swift */,
-				D3F0B1EC220700E600EF93DB /* BottomModalViewController.swift */,
-				D3F0B1E82206FB5B00EF93DB /* LeftModalViewController.swift */,
-				D3F0B1EA220700D700EF93DB /* RightModalViewController.swift */,
-				D3F0B1EE220700EE00EF93DB /* TopModalViewController.swift */,
 				D3918B6321E615260005816B /* ViewController.swift */,
 				D3918B6821E615270005816B /* Assets.xcassets */,
 				D3918B6A21E615270005816B /* LaunchScreen.storyboard */,
@@ -174,6 +170,42 @@
 				D3918B8321E615270005816B /* Info.plist */,
 			);
 			path = DemoUITests;
+			sourceTree = "<group>";
+		};
+		D3ADC54022087F11009814F0 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0B1E62206FA1E00EF93DB /* Top.storyboard */,
+				D3F0B1EE220700EE00EF93DB /* TopModalViewController.swift */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		D3ADC54122087F1A009814F0 /* Left */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0B1E02206FA0600EF93DB /* Left.storyboard */,
+				D3F0B1E82206FB5B00EF93DB /* LeftModalViewController.swift */,
+			);
+			path = Left;
+			sourceTree = "<group>";
+		};
+		D3ADC54222087F25009814F0 /* Bottom */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0B1E42206FA1600EF93DB /* Bottom.storyboard */,
+				D3F0B1EC220700E600EF93DB /* BottomModalViewController.swift */,
+			);
+			path = Bottom;
+			sourceTree = "<group>";
+		};
+		D3ADC54322087F2F009814F0 /* Right */ = {
+			isa = PBXGroup;
+			children = (
+				D3F0B1E22206FA0D00EF93DB /* Right.storyboard */,
+				D3F0B1EA220700D700EF93DB /* RightModalViewController.swift */,
+			);
+			path = Right;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
