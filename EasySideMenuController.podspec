@@ -53,7 +53,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "fummicc1" => "email@address.com" }
+  spec.author             = { "fummicc1" => "fumiya.tennis1@gmail.com" }
   # Or just: spec.author    = "fummicc1"
   # spec.authors            = { "fummicc1" => "email@address.com" }
   # spec.social_media_url   = "https://twitter.com/fummicc1"
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
+  spec.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"

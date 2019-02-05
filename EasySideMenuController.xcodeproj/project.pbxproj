@@ -15,6 +15,7 @@
 		D3918B4521E6150F0005816B /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3918B3B21E6150F0005816B /* EasySideMenuController.framework */; };
 		D3918B4A21E6150F0005816B /* EasySideMenuControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3918B4921E6150F0005816B /* EasySideMenuControllerTests.swift */; };
 		D3918B4C21E6150F0005816B /* EasySideMenuController.h in Headers */ = {isa = PBXBuildFile; fileRef = D3918B3E21E6150F0005816B /* EasySideMenuController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D399C69E2209C71900B8E4A6 /* EasySideMenuAnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = D399C69D2209C71900B8E4A6 /* EasySideMenuAnimatorDismiss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D3918B4921E6150F0005816B /* EasySideMenuControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuControllerTests.swift; sourceTree = "<group>"; };
 		D3918B4B21E6150F0005816B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3918B8F21E615270005816B /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Demo.xcodeproj; path = Demo/Demo.xcodeproj; sourceTree = "<group>"; };
+		D399C69D2209C71900B8E4A6 /* EasySideMenuAnimatorDismiss.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasySideMenuAnimatorDismiss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				D363BBB921F1FCB100FAA7ED /* SideMenuManager.swift */,
 				D346A2A921F4C97A00749CCF /* SideMenuModel.swift */,
 				D36EB9E921F70863003BA642 /* EasySideMenuAnimator.swift */,
+				D399C69D2209C71900B8E4A6 /* EasySideMenuAnimatorDismiss.swift */,
 			);
 			path = EasySideMenuController;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D346A2AA21F4C97A00749CCF /* SideMenuModel.swift in Sources */,
+				D399C69E2209C71900B8E4A6 /* EasySideMenuAnimatorDismiss.swift in Sources */,
 				D363BBBA21F1FCB100FAA7ED /* SideMenuManager.swift in Sources */,
 				D36EB9EA21F70863003BA642 /* EasySideMenuAnimator.swift in Sources */,
 				D317622221F54ACA00E3B41F /* EasyPresentationController.swift in Sources */,

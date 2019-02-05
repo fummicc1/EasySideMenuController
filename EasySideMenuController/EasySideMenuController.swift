@@ -15,7 +15,7 @@ open class EasySideMenuController: UIViewController, UIViewControllerTransitioni
     }
     
     public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return nil
+        return EasySideMenuAnimatorDismiss(direction: SideMenuManager.shared.menuModel!.direction)
     }
 
     public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
