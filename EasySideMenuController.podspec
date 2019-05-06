@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "EasySideMenuController"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "this lib make it easy to show sideMenu."
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
                       - you can implement sideMenu.
+                      - this library will make it possible to show SideMenu with ease.
                    DESC
 
   spec.homepage     = "https://github.com/fummicc1/EasySideMenuController"
@@ -80,7 +81,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/fummicc1/EasySideMenuController.git", :commit => "4c6ea8f91cffbc4b8117cfdc914a263175ab866c" }
+  spec.source       = { :git => "https://github.com/fummicc1/EasySideMenuController.git", :tag => spec.version }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
