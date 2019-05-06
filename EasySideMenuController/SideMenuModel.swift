@@ -10,8 +10,6 @@ import Foundation
 
 public struct SideMenuModel {
     
-    var direction: Direction
-    
     public enum Direction {
         case left
         case right
@@ -19,6 +17,6 @@ public struct SideMenuModel {
         case bottom
     }
     
+    var direction: Direction
     var size: CGSize
-    
 }

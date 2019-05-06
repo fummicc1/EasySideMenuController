@@ -19,33 +19,17 @@ class EasyPresentationController: UIPresentationController {
     // 表示トランザクション前に呼ばれる
     override func presentationTransitionWillBegin() {
         super.presentationTransitionWillBegin()
-        
+        // overViewの作成
         overView = UIView()
         overView.frame = containerView?.frame ?? .zero
         overView.isUserInteractionEnabled = true
         overView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(dismissPresentedVC)))
-        
         containerView?.addSubview(overView)
-        
     }
     
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
         return SideMenuManager.shared.menuModel!.size
     }
-    
-//
-//    private func startTransition() {
-//        presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] (context) in
-//            self?.overView.alpha = 0.6
-//        }, completion: nil)
-//    }
-//
-//    override func dismissalTransitionWillBegin() {
-//        presentedViewController.transitionCoordinator?.animate(alongsideTransition: { [weak self] (context) in
-//            self?.overView.alpha = 0.0
-//        }, completion: nil)
-//    }
-//
 }
 
 extension EasyPresentationController {

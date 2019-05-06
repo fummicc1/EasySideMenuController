@@ -22,7 +22,8 @@
 		D3F0B1EB220700D700EF93DB /* RightModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0B1EA220700D700EF93DB /* RightModalViewController.swift */; };
 		D3F0B1ED220700E600EF93DB /* BottomModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0B1EC220700E600EF93DB /* BottomModalViewController.swift */; };
 		D3F0B1EF220700EE00EF93DB /* TopModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F0B1EE220700EE00EF93DB /* TopModalViewController.swift */; };
-		D3F0B1F122070FCE00EF93DB /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F0B1F022070FCE00EF93DB /* EasySideMenuController.framework */; };
+		D3F2E91C22809DA600692986 /* EasySideMenuController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F2E90822809BB100692986 /* EasySideMenuController.framework */; };
+		D3F2E91D22809DA600692986 /* EasySideMenuController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3F2E90822809BB100692986 /* EasySideMenuController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D3CE1A3321E6186400644E37 /* Embed Frameworks */ = {
+		D3F2E91E22809DA600692986 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D3F2E91D22809DA600692986 /* EasySideMenuController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +81,7 @@
 		D3F0B1EC220700E600EF93DB /* BottomModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomModalViewController.swift; sourceTree = "<group>"; };
 		D3F0B1EE220700EE00EF93DB /* TopModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopModalViewController.swift; sourceTree = "<group>"; };
 		D3F0B1F022070FCE00EF93DB /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F2E90822809BB100692986 /* EasySideMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasySideMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F0B1F122070FCE00EF93DB /* EasySideMenuController.framework in Frameworks */,
+				D3F2E91C22809DA600692986 /* EasySideMenuController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +113,7 @@
 		D3087DD821FDA090008008CE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3F2E90822809BB100692986 /* EasySideMenuController.framework */,
 				D3F0B1F022070FCE00EF93DB /* EasySideMenuController.framework */,
 				D3087DD921FDA090008008CE /* EasySideMenuController.framework */,
 			);
@@ -218,7 +222,7 @@
 				D3918B5A21E615260005816B /* Sources */,
 				D3918B5B21E615260005816B /* Frameworks */,
 				D3918B5C21E615260005816B /* Resources */,
-				D3CE1A3321E6186400644E37 /* Embed Frameworks */,
+				D3F2E91E22809DA600692986 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -529,6 +533,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@loader_path/../Frameworks/",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Fumiya-Tanaka.Demo";
@@ -547,6 +552,7 @@
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
+					"@loader_path/../Frameworks/",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Fumiya-Tanaka.Demo";
