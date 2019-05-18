@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-# EasySideMenuController
-=======
-=======
->>>>>>> 395f863be70b82824f50f16e2de8d7cbb321aee0
 ## **EasySideMenuController**
 
 ## Overview
@@ -16,11 +10,7 @@ This library can easily display a screen like a side menu.
 Swift 5.0
 
 ## Usage
-<<<<<<< HEAD
 1. The parent ViewController inherits from `EasySideMenuController` instead of `UIViewController`. At this time, please be sure to write `import EasySideMenuController`.
-=======
-1. The parent ViewController inherits from `EasySideMenuController` instead of　` UIViewController`. At this time, please be sure to write `import EasySideMenuController`.
->>>>>>> 395f863be70b82824f50f16e2de8d7cbb321aee0
 
 ```swift
 import UIKit
