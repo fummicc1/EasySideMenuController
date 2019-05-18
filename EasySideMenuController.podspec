@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "EasySideMenuController"
-  spec.version      = "0.1.0"
+  spec.version      = "0.1.1"
   spec.summary      = "this lib make it easy to show sideMenu."
 
   # This description is used to generate tags and improve search results.
