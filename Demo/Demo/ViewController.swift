@@ -21,7 +21,7 @@ class ViewController: EasySideMenuController {
             direction: .left,
             presenting: self,
             presented: modalVC,
-            sideMenuSize: CGSize(width: 150, height: UIScreen.main.bounds.height)
+            sideMenuSize: CGSize(width: 250, height: UIScreen.main.bounds.height)
         )
     }
     
@@ -41,7 +41,7 @@ class ViewController: EasySideMenuController {
             direction: .top,
             presenting: self,
             presented: modalVC,
-            sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: 200)
+            sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: 300)
         )
     }
     
@@ -51,7 +51,7 @@ class ViewController: EasySideMenuController {
             direction: .bottom,
             presenting: self,
             presented: modalVC,
-            sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: modalVC.view.bounds.height)
+            sideMenuSize: CGSize(width: UIScreen.main.bounds.width, height: 400)
         )
     }
 }
